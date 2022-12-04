@@ -1,0 +1,183 @@
+body{
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+
+.animation-hover-card:hover{
+    border-color: transparent;
+    box-shadow: 0 1px 2px -2px rgba(100, 0, 0, .16), 0 3px 6px 0 rgba(100, 0, 0, .12), 0 5px 12px 4px rgba(100, 0, 0, .09);
+}
+
+@font-face {
+    font-family: 'webfont';
+    font-display: swap;
+    src: url('//at.alicdn.com/t/webfont_13spo0vfzhz.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/webfont_13spo0vfzhz.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/webfont_13spo0vfzhz.woff2') format('woff2'),
+    url('//at.alicdn.com/t/webfont_13spo0vfzhz.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/webfont_13spo0vfzhz.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/webfont_13spo0vfzhz.svg#站酷小薇体') format('svg'); /* iOS 4.1- */
+}
+
+.main-idea {
+    height: 5.5rem;
+    margin: 0 auto;
+    max-width: 90%;
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: webfont;
+    font-weight: bold;
+    overflow: hidden;
+    text-transform: uppercase;
+
+
+}
+
+.background-img {
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.7;
+    position: fixed;
+    z-index: -10;
+    filter: blur(0rem);
+    background-image: url("../resources/img/toolsBackgrondImg.jpg");
+}
+.background-img-shade {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: #14192c;
+    opacity: 0.5;
+    z-index: -10;
+}
+
+.section-content-type-container {
+    width: 970px;
+    margin: 0 auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*-webkit-transform: translateZ(1000px);*/
+    /*transform: translateZ(1000px);*/
+}
+.section-content-type-container-2 {
+    width: 970px;
+    margin: 0 auto;
+    max-width: 90%;
+    /*-webkit-transform: translateZ(1000px);*/
+    /*transform: translateZ(1000px);*/
+}
+.section-content-type {
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    clear: both;
+    margin: 20px 0;
+}
+
+.tools-cards {
+    width: 99%;
+    display: flex;
+    margin: 0 0 20px 0;
+}
+
+.tools-card {
+    width: 29%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2%;
+}
+
+.tools-card-background {
+    display: block;
+    overflow-x: auto;
+    background: #202746;
+    /*opacity: 0.1;*/
+    opacity: 0.8;
+    color: #979db4;
+    padding: 4%;
+    -webkit-text-size-adjust: none;
+    width: 96%;
+}
+
+.tools-card-title {
+    font-family: 优设标题黑;
+    color: white;
+}
+
+.tools-card-star {
+    display: flex;
+    flex-direction: row;
+}
+
+.tools-card-star-words {
+    font-size: small;
+    color: #aaa;
+}
+
+.layui-card-header {
+    font-size: 1rem;
+}
+
+
+/*形状分割器*/
+.custom-shape-divider-bottom-1639398978 {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1639398978 svg {
+    position: absolute;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 62px;
+}
+
+.custom-shape-divider-bottom-1639398978 .shape-fill {
+    fill: #b1b3b8;
+    opacity: 0.1;
+}
+
+.website-author {
+
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    clear: both;
+
+    font-size: 12px;
+    color: rgba(255,255,255,.6);
+    text-shadow: 0 0 20px rgba(0 0 0 .8);
+    white-space: nowrap;
+
+}

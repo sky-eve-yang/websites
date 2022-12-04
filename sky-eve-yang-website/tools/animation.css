@@ -1,0 +1,76 @@
+/*鼠标悬浮，盒子上移*/
+.text-pop-up-top:hover {
+    -webkit-animation: text-pop-up-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 0.1s;
+    animation: text-pop-up-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 0.1s;
+}
+@keyframes text-pop-up-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+}
+/*鼠标移开，盒子下移*/
+.text-pop-up-bottom {
+    -webkit-animation: text-pop-up-bottom 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 0.1s;
+    animation: text-pop-up-bottom 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 0.1s;
+}
+@keyframes text-pop-up-bottom {
+    0% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+}
+
+
+
+/*鼠标悬浮，盒子外发光*/
+.text-shadow-drop-br:hover {
+    -webkit-animation: text-shadow-drop-br 0.6s both;
+    animation: text-shadow-drop-br 0.6s both;
+}
+@-webkit-keyframes text-shadow-drop-br {
+    0% {
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 6px 6px 18px rgba(255, 255, 255, 0.35);
+    }
+}
+@keyframes text-shadow-drop-br {
+    0% {
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 6px 6px 18px rgba(255, 255, 255, 0.35);
+    }
+}
+/*鼠标悬浮，盒子透明度改变*/
+.text-shadow-drop-br:hover .tools-card-background {
+    display: block;
+    overflow-x: auto;
+    background: #202746;
+    opacity: 0.85;
+    color: #979db4;
+    padding: 4%;
+    -webkit-text-size-adjust: none;
+    width: 96%;
+
+}
